@@ -6,6 +6,8 @@ services:
   tyk-gateway:
     volumes:
     - ./confs/tyk.conf:/opt/tyk-gateway/tyk.conf
+    - ./confs/toronto.ca.key:/opt/tyk-gateway/toronto.ca.key
+    - ./confs/toronto.ca.cert:/opt/tyk-gateway/toronto.ca.cert
   tyk-pump:
     volumes:
     - ./confs/pump.conf:/opt/tyk-pump/pump.conf
