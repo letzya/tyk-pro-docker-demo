@@ -1,5 +1,9 @@
 version: '3.3'
 services:
+  tyk-tib:
+    volumes:
+    - ./confs/tib.conf:/opt/tyk-identity-broker/tib.conf
+    - ./confs/profiles.json:/opt/tyk-identity-broker/profiles.json
   tyk-dashboard:
     volumes:
     - ./confs/tyk_analytics.conf:/opt/tyk-dashboard/tyk_analytics.conf

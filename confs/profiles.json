@@ -1,0 +1,41 @@
+[
+{
+    "ActionType": "GenerateOrLoginUserProfile",
+    "ID": "1",
+    "OrgID": "5ba169419328d9000193e9f6",
+    "ProviderConfig": {
+        "LDAPUseSSL": false,
+        "FailureRedirect": "http://bugatti.corp.toronto.ca:3000/?fail=true",
+        "LDAPAttributes": [],
+        "LDAPPort": "389",
+        "LDAPServer": "identldaps.toronto.ca",
+        "LDAPUserDN": "cn=*USERNAME*,ou=Staff,o=Toronto"
+    },
+    "ProviderName": "ADProvider",
+    "ReturnURL": "http://bugatti.corp.toronto.ca:3000/tap",
+    "Type": "passthrough"
+},
+{
+    "ActionType": "GenerateOrLoginDeveloperProfile",
+    "ID": "2",
+    "IdentityHandlerConfig": {
+        "DashboardCredential": "573cb5c7a57deb1f78000001198fa5db868d42ff47dc56fa4a8080fd"
+    },
+    "OrgID": "5ba169419328d9000193e9f6",
+    "ProviderConfig": {
+        "FailureRedirect": "http://portal.bugatti.corp.toronto.ca:3000/portal/login/",
+        "LDAPAttributes": [],
+        "LDAPPort": "389",
+        "LDAPServer": "identldaps.toronto.ca",
+        "LDAPUserDN": "cn=*USERNAME*,ou=Staff,o=Toronto",
+        "GetAuthFromBAHeader": true
+    },
+    "ProviderConstraints": {
+        "Domain": "",
+        "Group": ""
+    },
+    "ProviderName": "ADProvider",
+    "ReturnURL": "http://portal.bugatti.corp.toronto.ca:3000/portal/sso/",
+    "Type": "passthrough"
+}
+]
