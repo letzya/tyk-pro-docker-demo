@@ -17,6 +17,9 @@ services:
     depends_on:
     - tyk-redis
     - tyk-mongo
+    environment:
+    - TYK_LOGLEVEL=debug
+
   tyk-gateway:
     image: tykio/tyk-gateway:latest
     ports:

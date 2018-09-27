@@ -9,7 +9,8 @@
         "LDAPAttributes": [],
         "LDAPPort": "389",
         "LDAPServer": "identldaps.toronto.ca",
-        "LDAPUserDN": "cn=*USERNAME*,ou=Staff,o=Toronto"
+        "LDAPUserDN": "cn=*USERNAME*,ou=Staff,o=Toronto",
+        "GetAuthFromBAHeader": false 
     },
     "ProviderName": "ADProvider",
     "ReturnURL": "http://bugatti.corp.toronto.ca:3000/tap",
@@ -28,7 +29,7 @@
         "LDAPPort": "389",
         "LDAPServer": "identldaps.toronto.ca",
         "LDAPUserDN": "cn=*USERNAME*,ou=Staff,o=Toronto",
-        "GetAuthFromBAHeader": true
+        "GetAuthFromBAHeader": false 
     },
     "ProviderConstraints": {
         "Domain": "",
