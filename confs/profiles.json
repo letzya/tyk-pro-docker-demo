@@ -36,7 +36,7 @@
         "Group": ""
     },
     "ProviderName": "ADProvider",
-    "ReturnURL": "http://portal.bugatti.corp.toronto.ca:3000/portal/sso/",
+    "ReturnURL": "http://portal.bugatti.corp.toronto.ca:3000/portal/sso",
     "Type": "passthrough"
 }
 ]
