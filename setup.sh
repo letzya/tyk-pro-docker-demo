@@ -15,7 +15,7 @@ TYK_DASHBOARD_USERNAME="test$RANDOM@test.com"
 TYK_DASHBOARD_PASSWORD="test123"
 
 # Tyk portal settings
-TYK_PORTAL_DOMAIN="www.tyk-portal-test.com"
+TYK_PORTAL_DOMAIN="www.tyk-portal-demo.com"
 TYK_DASH_DOMAIN="www.tyk-test.com"
 TYK_PORTAL_PATH="/portal/"
 
